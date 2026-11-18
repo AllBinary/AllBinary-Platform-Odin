@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMOdin</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMOdin</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryOdinM</module>
+        <module>../TempBaseJavaLibraryOdinM</module>
+        
+        <module>../../allbinary_src/LogOdinM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcOdinM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryOdinM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryOdinM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryOdinM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryOdinM</module>
+
+        <module>../ExceptionHTMLJavaLibraryOdinM</module>
+        <module>../J2MEExceptionLibraryOdinM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryOdinM</module>
+        <module>../J2MEUtilJavaLibraryOdinM</module>
+        <module>../J2MEColorJavaLibraryOdinM</module>
+        <module>../EventJ2MELibraryOdinM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryOdinM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryOdinM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryOdinM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryOdinM</module>-->
+        <module>../logging/LoggingNoneOdinM</module>
+        <module>../logging/LoggingJ2MEAllOdinM</module>
+        <module>../logging/LoggingJ2MEExceptionOdinM</module>
+        <!--<module>../logging/LoggingAndroidAllOdinM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionOdinM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryOdinM</module>
+        
+        <module>../lib/BaseMathLibraryOdinM</module>
+        <module>../lib/BasicMathLibraryOdinM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryOdinM</module>
+        <!--<module>../../allbinary_src/ThreadHTMLLibraryOdinM</module>-->
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryOdinM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryOdinM</module>
+        <module>../time/TimeJavaLibraryOdinM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryOdinM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryOdinM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryOdinM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryOdinM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryOdinM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOOdinM</module>
+
+        <module>../lib/TrigBaseLibraryOdinM</module>
+
+    </modules>
+
+</project>
+

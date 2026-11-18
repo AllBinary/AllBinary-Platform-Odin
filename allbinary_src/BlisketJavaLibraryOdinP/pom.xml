@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPOdin</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPOdin</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryOdinP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryOdinM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryOdinM</module>        
+
+        <module>../data/DataTableInterfacesOdinM</module>
+        
+        <module>../QueueJavaLibraryOdinM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryOdinM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryOdinM</module>
+
+        <module>../JavaUtilLibraryOdinM</module>
+        <module>../NullInitInfoJavaLibraryOdinM</module>        
+        <module>../InitInfoJavaLibraryOdinM</module>
+        <module>../PreLoaderHttpJavaLibraryOdinM</module>
+        
+        <module>../TagsBaseJavaLibraryOdinM</module>
+        <module>../CustomLoaderJavaLibraryOdinM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryOdinM</module>
+        <module>../logic/data/file/FileJavaLibraryOdinM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryOdinM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryOdinM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryOdinM</module>
+
+        <module>../VisualStyleJavaLibraryOdinM</module>
+
+        <module>../ConfigurationJavaLibraryOdinM</module>
+
+        <module>../VisualTransformBaseJavaLibraryOdinM</module>
+
+        <module>../CategoryBaseJavaLibraryOdinM</module>
+        <module>../CategoryJavaLibraryOdinM</module>
+
+        <module>../UserJavaLibraryOdinM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryOdinM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryOdinM</module>
+        <module>../PaymentGatewayJavaLibraryOdinM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryOdinM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryOdinM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryOdinM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryOdinM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryOdinM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryOdinM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryOdinM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryOdinM</module>
+        <module>../data/EntityVisualTransformJavaLibraryOdinM</module>
+        <module>../data/EntityUserJavaLibraryOdinM</module>
+        <module>../data/EntityWorkflowJavaLibraryOdinM</module>
+
+        <module>../SMTPConfigurationJavaLibraryOdinM</module>
+        <module>../SMTPBaseJavaLibraryOdinM</module>
+
+        <module>../VisualTransformJavaLibraryOdinM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryOdinM</module>
+        <module>../GatewayJavaLibraryOdinM</module>
+        
+        <module>../WorkflowBaseJavaLibraryOdinM</module>
+        <module>../WorkflowJavaLibraryOdinM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryOdinM</module>
+        <module>../BlisketPreVOJavaLibraryOdinM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryOdinM</module>
+
+        <module>../UserCommerceJavaLibraryOdinM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryOdinM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryOdinM</module>
+        <module>../BlisketBaseJavaLibraryOdinM</module>
+
+        <module>../logging/LoggingGAEAllOdinM</module>
+        <module>../BlisketJavaLibraryOdinM</module>
+        
+    </modules>
+
+</project>
+

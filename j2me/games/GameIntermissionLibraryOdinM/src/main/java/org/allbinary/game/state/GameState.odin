@@ -1,0 +1,51 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+package allbinary
+// jpackage org.allbinary.game.state
+
+// jclass GameState extends Object
+// jfield GameState name
+GameState__sinit: i64 = 0;
+GameState__clinit :: proc() -> i64 {
+    if GameState__sinit != 0 { return 0; }
+    GameState__sinit = 1;
+    Object__clinit();
+    return 0;
+}
+GameState__initFields :: proc(this: i64) -> i64 {
+    return 0;
+}
+GameState__init_2 :: proc(this: i64, p_name: i64, p_state: i64) -> i64 {
+    l_name: i64 = p_name;
+    l_state: i64 = p_state;
+    Object__init_0(this);
+    if jexc != 0 { return 0; }
+    GameState__initFields(this);
+        GameState__uset_name(this, l_name);
+    return 0;
+}
+GameState__new_2 :: proc(p_name: i64, p_state: i64) -> i64 {
+    GameState__clinit();
+    this := jnew(jcid_GameState, jsize_GameState);
+    GameState__init_2(this, p_name, p_state);
+    if jexc != 0 { return 0; }
+    return this;
+}
+GameState__m_toString_0 :: proc(this: i64) -> i64 {
+        { return GameState__uget_name(this); }
+    return 0;
+}
+

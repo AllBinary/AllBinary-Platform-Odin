@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMOdin</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMOdin</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryOdinM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryOdinM</module>
+
+        <module>../../../physics/MovementJavaLibraryOdinM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryOdinM</module>
+        <module>../../games/PickupGameJavaLibraryOdinM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryOdinM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryOdinM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryOdinM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryOdinM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryOdinM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryOdinM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryOdinM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryOdinM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryOdinM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryOdinM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryOdinM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryOdinM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryOdinM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryOdinM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryOdinM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryOdinM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryOdinM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryOdinM</module>
+        <module>../../games/CollisionLibraryOdinM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryOdinM</module>
+
+        <module>../../games/PickupLayerJavaLibraryOdinM</module>
+
+        <module>../../games/DamageGameJavaLibraryOdinM</module>
+        <module>../../games/DropJavaLibraryOdinM</module>
+        <module>../../games/WeaponLayerJavaLibraryOdinM</module>
+
+        <module>../../games/CombatGameJavaLibraryOdinM</module>
+        <module>../../games/LifeJavaLibraryOdinM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryOdinM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryOdinM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryOdinM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryOdinM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryOdinM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryOdinM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryOdinM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryOdinM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackOdinP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workodin/j2me/games/strategy/rts/RTSGameJavaLibraryOdinP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryOdinP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryOdinM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryOdinM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryOdinM</module>
+
+        <module>../../input/TrackingEventJavaLibraryOdinM</module>
+        <module>../../../game/behavior/BehaviorLibraryOdinP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryOdinP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryOdinM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryOdinM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryOdinM</module>-->
+        <!--<module>../../android/VirtualKeyboardJavaLibraryOdinM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

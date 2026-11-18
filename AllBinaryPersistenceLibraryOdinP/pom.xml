@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryPersistenceLibraryPOdin</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryPersistenceLibraryPOdin</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        
+        <!--
+        -->
+        <module>../allbinary_src/cache/AllBinaryCacheLibraryOdinM</module>
+        <module>../allbinary_src/PermutationsJavaLibraryOdinM</module>
+        <module>../allbinary_src/logic/BasePreloaderFileJavaLibraryOdinM</module>
+        <module>../allbinary_src/logic/data/file/FileJavaLibraryOdinM</module>
+        <module>../allbinary_src/logic/data/file/FileJ2SEJavaLibraryOdinM</module>
+        <!--<module>../allbinary_src/data/DataJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/logic/data/file/FileUnamedJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/logic/data/file/FileAdvancedJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/PreLoaderJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/FileInitInfoJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/PreLoaderFileJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/PreLoaderLicenseJavaLibraryOdinM</module>-->
+        <module>../j2me/PCResourceLibraryOdinM</module>
+        <module>../j2me/ProgressJ2MEJavaLibraryOdinM</module>
+        <module>../allbinary_src/licensing/ClientInfoBaseJavaLibraryOdinM</module>
+        <!--<module>../allbinary_src/licensing/RemoteXmlRpcJavaLibraryOdinM</module>-->
+        <!--<module>../allbinary_src/licensing/LicenseClientJavaLibraryOdinM</module>-->
+
+        <!--
+        <module>../allbinary_src/PreLoaderLicenseJavaLibraryOdinM</module>
+        -->
+    </modules>
+
+</project>
+

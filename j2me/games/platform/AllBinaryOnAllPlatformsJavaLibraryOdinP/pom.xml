@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>AllBinaryOnAllPlatformsJavaLibraryPOMOdin</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>AllBinaryOnAllPlatformsJavaLibraryPOMOdin</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        <module>../j2me/HTMLForJ2MEJavaLibraryOdinM</module>
+        -->
+        
+        <module>../../../games/PreGameJ2MEJavaLibraryOdinP</module>
+        <module>../../GameJ2MELibraryOdinP</module>
+        <module>../../CombatGameJavaLibraryPOOdinM</module>
+        <module>../../AdvancedCombatGameJavaLibraryOdinP</module>
+        
+        <module>../j2me/AllBinaryOnJ2MEBasePlatformJavaLibraryOdinM</module>
+        
+        <!--<module>../j2me/AllBinaryOnJ2MEPlatformJavaLibraryOdinM</module>-->
+        
+        <module>../j2se/AllBinaryOnJ2SEBasePlatformJavaLibraryOdinM</module>
+        
+        <!--
+        <module>../j2se/AllBinaryOnJ2SEPlatformJavaLibraryOdinM</module>
+        
+        <module>../html/AllBinaryOnHTMLBasePlatformJavaLibraryOdinM</module>
+        <module>../html/AllBinaryOnHTMLPlatformJavaLibraryOdinM</module>
+
+        <module>../android/AllBinaryOnAndroidBasePlatformJavaLibraryOdinM</module>
+        <module>../android/AllBinaryOnAndroidBasePlatformDependenciesJavaLibraryOdinM</module>
+        <module>../android/AllBinaryOnAndroidPlatformJavaLibraryOdinM</module>
+        <module>../android/AllBinaryOnAndroidPlatformDependenciesJavaLibraryOdinM</module>
+        
+        -->
+        
+        <module>../AllBinaryOptionalBasePlatformJavaLibraryOdinM</module>
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

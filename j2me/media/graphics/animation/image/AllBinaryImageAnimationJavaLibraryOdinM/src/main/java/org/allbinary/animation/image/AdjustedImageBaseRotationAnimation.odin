@@ -1,0 +1,71 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+package allbinary
+// jpackage org.allbinary.animation.image
+// jimport javax.microedition.lcdui.Graphics
+// jimport javax.microedition.lcdui.Image
+// jimport org.allbinary.animation.AnimationBehavior
+// jimport org.allbinary.math.AngleInfo
+
+// jclass AdjustedImageBaseRotationAnimation extends ImageBaseRotationAnimation
+// jfield AdjustedImageBaseRotationAnimation dx dy
+AdjustedImageBaseRotationAnimation__sinit: i64 = 0;
+AdjustedImageBaseRotationAnimation__clinit :: proc() -> i64 {
+    if AdjustedImageBaseRotationAnimation__sinit != 0 { return 0; }
+    AdjustedImageBaseRotationAnimation__sinit = 1;
+    ImageBaseRotationAnimation__clinit();
+    return 0;
+}
+AdjustedImageBaseRotationAnimation__initFields :: proc(this: i64) -> i64 {
+    return 0;
+}
+AdjustedImageBaseRotationAnimation__init_6 :: proc(this: i64, p_image: i64, p_angleInfo: i64, p_totalAngle: i64, p_dx: i64, p_dy: i64, p_animationBehavior: i64) -> i64 {
+    l_image: i64 = p_image;
+    l_angleInfo: i64 = p_angleInfo;
+    l_totalAngle: i64 = p_totalAngle;
+    l_dx: i64 = p_dx;
+    l_dy: i64 = p_dy;
+    l_animationBehavior: i64 = p_animationBehavior;
+        ImageBaseRotationAnimation__init_4(this, l_image, l_angleInfo, l_totalAngle, l_animationBehavior);
+        if jexc != 0 { return 0; }
+        AdjustedImageBaseRotationAnimation__initFields(this);
+        jm_init_2(this, l_dx, l_dy);
+        if jexc != 0 { return 0; }
+    return 0;
+}
+AdjustedImageBaseRotationAnimation__new_6 :: proc(p_image: i64, p_angleInfo: i64, p_totalAngle: i64, p_dx: i64, p_dy: i64, p_animationBehavior: i64) -> i64 {
+    AdjustedImageBaseRotationAnimation__clinit();
+    this := jnew(jcid_AdjustedImageBaseRotationAnimation, jsize_AdjustedImageBaseRotationAnimation);
+    AdjustedImageBaseRotationAnimation__init_6(this, p_image, p_angleInfo, p_totalAngle, p_dx, p_dy, p_animationBehavior);
+    if jexc != 0 { return 0; }
+    return this;
+}
+AdjustedImageBaseRotationAnimation__m_init_2 :: proc(this: i64, p_dx: i64, p_dy: i64) -> i64 {
+    l_dx: i64 = p_dx;
+    l_dy: i64 = p_dy;
+        AdjustedImageBaseRotationAnimation__uset_dx(this, l_dx);
+        AdjustedImageBaseRotationAnimation__uset_dy(this, l_dy);
+    return 0;
+}
+AdjustedImageBaseRotationAnimation__m_paintXY_3 :: proc(this: i64, p_graphics: i64, p_x: i64, p_y: i64) -> i64 {
+    l_graphics: i64 = p_graphics;
+    l_x: i64 = p_x;
+    l_y: i64 = p_y;
+        ImageBaseRotationAnimation__m_paintXY_3(this, l_graphics, ji(l_x + AdjustedImageBaseRotationAnimation__uget_dx(this)), ji(l_y + AdjustedImageBaseRotationAnimation__uget_dy(this)));
+        if jexc != 0 { return 0; }
+    return 0;
+}
+

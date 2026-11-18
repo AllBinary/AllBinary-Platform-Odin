@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMOdin</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMOdin</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryOdinM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryOdinM</module>
+        <!--
+        <module>../../../../working_thirdpartyodin/security/BouncyCastleDESJavaLibraryOdinM</module>
+        <module>../../../../working_thirdpartyodin/communication/XmlRpc/XmlRpcJavaLibraryOdinM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryOdinM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryOdinM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryOdinM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryOdinM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryOdinM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryOdinM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryOdinM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryOdinM</module>
+
+        <module>../../DebugJavaLibraryOdinM</module>             
+        <module>../../ResourceLibraryOdinM</module>
+        <module>../../ResourceJ2MEJavaLibraryOdinM</module>
+        <!--<module>../../AndroidResourceLibraryOdinM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryOdinM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryOdinM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryOdinM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryOdinM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryOdinM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryOdinM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryOdinM</module>
+
+        <module>../../games/GameInputLibraryOdinM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryOdinM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryOdinM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryOdinM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryOdinM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryOdinM</module>   
+        <module>../../games/GameConfigurationJavaLibraryOdinM</module>
+
+        <module>../../games/GameIntermissionLibraryOdinM</module>
+
+        <module>../../GroupLibraryOdinM</module>
+
+        <module>../../input/NoSensorJavaLibraryOdinM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryOdinM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryOdinM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryOdinM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryOdinM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryOdinM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryOdinM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryOdinM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryOdinM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryOdinM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryOdinM</module>
+        <module>../../input/MotionGestureJavaLibraryOdinM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryOdinM</module>
+
+        <module>../../games/GameInputPersistanceLibraryOdinM</module>
+        <module>../../games/GameInputNoPersistanceLibraryOdinM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryOdinM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryOdinM</module>
+        <module>../../input/NoGyroSensorJavaLibraryOdinM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryOdinM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryOdinM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryOdinM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryOdinM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryOdinM</module>
+        <module>../../media/sound/SoundJ2MELibraryOdinM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryOdinM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryOdinM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryOdinM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryOdinM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryOdinM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryOdinM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryOdinM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryOdinM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryOdinM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryOdinM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryOdinM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryOdinM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryOdinM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryOdinM</module>
+        <module>../../games/GameResourceJavaLibraryOdinM</module>
+        <module>../../games/GameSoundsJavaLibraryOdinM</module>
+
+        <module>../../input/TouchInputLibraryOdinP</module>
+
+        <module>../../media/MediaDataOdinM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryOdinM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryOdinM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryOdinM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryOdinM</module>
+
+        <module>../../FullScreenNoneJavaLibraryOdinM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryOdinM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryOdinM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryOdinM</module>
+
+        <module>../../lib/TrigJ2MELibraryOdinM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryOdinM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryOdinM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryOdinM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryOdinM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryOdinM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryOdinM</module>
+
+        <module>../GameNotificationJavaLibraryOdinM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryOdinM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryOdinM</module>
+        <module>../SWTJavaLibraryOdinM</module>
+        <module>../GameJ2MELibraryOdinM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOOdinM</module>
+        -->
+    
+    </modules>
+
+</project>
+
